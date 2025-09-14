@@ -11,10 +11,7 @@
 
 ![](./src/header_.png)
 # Bio:
-### Hi, welcome to my github👋. I am Shijin or just call me Doven. Now I am studying  for Msc Adv Computing at Imperial College London. If you have any questions, welcome to contact me (zsj1364226740@gmail.com). 
-
-### This is my personal blog -> https://dovis01.github.io/. Welcome to explore it. Thanks! 🙌🙌
-
+### Hi, welcome to my github👋. I am Shijin or just call me Doven. Now I am studying for MSc Adv Computing at Imperial College London. If you have any questions, welcome to contact me (zsj1364226740@gmail.com). Thanks! 🙌🙌
 
 ### 🛠 &nbsp;Tech Stack
 
