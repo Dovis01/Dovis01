@@ -11,7 +11,7 @@
 
 ![](./src/header_.png)
 # Bio:
-### Hi, welcome to my github👋. I am Shijin or just call me Doven. Now I am studying for MSc Adv Computing at Imperial College London. If you have any questions, welcome to contact me (zsj1364226740@gmail.com). Thanks! 🙌🙌
+### Hi, welcome to my github👋. I am Shijin or just call me Doven. I passionate about open source inference projects. If you have any questions, welcome to contact me (dovis.zhang02@gmail.com). Thanks! 🙌🙌
 
 ### 🛠 &nbsp;Tech Stack
 
