@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title description">
+  <title id="title">Shijin Zhang, also known as Doven</title>
+  <desc id="description">Terminal interface on animated dark liquid glass for open-source LLM inference, HPC, and AI systems</desc>
+
+  <defs>
+    <linearGradient id="lgbg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#050608" />
+      <stop offset=".52" stop-color="#0a0d13" />
+      <stop offset="1" stop-color="#080a10" />
+    </linearGradient>
+    <radialGradient id="lgcyan">
+      <stop stop-color="#67e8f9" stop-opacity=".24" />
+      <stop offset=".5" stop-color="#22d3ee" stop-opacity=".09" />
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="lgblue">
+      <stop stop-color="#818cf8" stop-opacity=".2" />
+      <stop offset=".55" stop-color="#6366f1" stop-opacity=".07" />
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="lgglass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff" stop-opacity=".105" />
+      <stop offset=".32" stop-color="#fff" stop-opacity=".028" />
+      <stop offset=".7" stop-color="#fff" stop-opacity=".055" />
+      <stop offset="1" stop-color="#fff" stop-opacity=".09" />
+    </linearGradient>
+    <linearGradient id="lgborder" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fff" stop-opacity=".34" />
+      <stop offset=".42" stop-color="#fff" stop-opacity=".08" />
+      <stop offset="1" stop-color="#a5b4fc" stop-opacity=".28" />
+    </linearGradient>
+    <filter id="lgblur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="26" />
+    </filter>
+    <filter id="lgsoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <clipPath id="lgpanel">
+      <rect x="82" y="28" width="1036" height="204" rx="24" />
+    </clipPath>
+    <clipPath id="lgreveal1">
+      <rect x="150" y="75" width="660" height="44">
+        <animate attributeName="width" values="660;0;660;660" keyTimes="0;.06;.62;1" begin="1s" dur="6s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="lgreveal2">
+      <rect x="150" y="128" width="770" height="31">
+        <animate attributeName="width" values="770;0;0;770;770" keyTimes="0;.06;.3;.78;1" begin="1s" dur="6s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="260" rx="22" fill="url(#lgbg)" />
+
+  <g filter="url(#lgblur)" opacity=".9">
+    <ellipse cx="130" cy="80" rx="250" ry="150" fill="url(#lgcyan)">
+      <animate attributeName="cx" values="130;390;130" dur="11s" repeatCount="indefinite" />
+      <animate attributeName="rx" values="250;315;250" dur="8s" repeatCount="indefinite" />
+    </ellipse>
+    <ellipse cx="1080" cy="205" rx="300" ry="165" fill="url(#lgblue)">
+      <animate attributeName="cx" values="1080;800;1080" dur="13s" repeatCount="indefinite" />
+      <animate attributeName="ry" values="165;215;165" dur="9s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+
+  <rect x="82" y="28" width="1036" height="204" rx="24" fill="#10141c" fill-opacity=".48" stroke="url(#lgborder)" stroke-width="1.4" />
+  <rect x="84" y="30" width="1032" height="200" rx="22" fill="url(#lgglass)" />
+
+  <g clip-path="url(#lgpanel)">
+    <path d="M-80 188C120 98 245 246 440 151S774 56 982 133s265 33 350-5v170H-80Z" fill="#c4b5fd" fill-opacity=".035" filter="url(#lgsoft)">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="M-80 188C120 98 245 246 440 151S774 56 982 133s265 33 350-5v170H-80Z;M-80 145C108 235 295 72 470 160s314 122 502 18 260-42 360 12v170H-80Z;M-80 188C120 98 245 246 440 151S774 56 982 133s265 33 350-5v170H-80Z" />
+    </path>
+  </g>
+
+  <circle cx="116" cy="57" r="5" fill="#ff5f57" />
+  <circle cx="136" cy="57" r="5" fill="#febc2e" />
+  <circle cx="156" cy="57" r="5" fill="#28c840" />
+
+  <text x="150" y="108" fill="#f1f5f9" font-family="SFMono-Regular,Consolas,'Liberation Mono',monospace" font-size="31" font-weight="600" clip-path="url(#lgreveal1)">&gt; Shijin Zhang / Doven</text>
+  <text x="150" y="151" fill="#6ee7b7" font-family="SFMono-Regular,Consolas,'Liberation Mono',monospace" font-size="18" letter-spacing="1" clip-path="url(#lgreveal2)">open_source_inference · hpc · ai_systems</text>
+  <rect x="150" y="174" width="11" height="22" rx="1" fill="#6ee7b7">
+    <animate attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite" />
+  </rect>
+</svg>
