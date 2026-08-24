@@ -23,7 +23,7 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_snake=#166534&color_dots=#eef3ef,#d9f7df,#afe9bd,#7bd795,#45bd70
             dist/github-contribution-grid-snake-dark.svg?color_snake=#d1fae5&color_dots=#202722,#4f7659,#66a173,#7fc98b,#a1e6ad
 
-      - name: Remove level bars and contribution-cell animations
+      - name: Remove level bars and trim the canvas
         run: python3 .github/scripts/optimize_snake.py dist/*.svg
 
       - name: Publish generated SVGs to the output branch
