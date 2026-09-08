@@ -8,7 +8,8 @@ import sys
 from pathlib import Path
 
 
-BAR_PATTERN = re.compile(r'<rect class="u u[0-3]"[^>]*/>')
+BAR_PATTERN = re.compile(r'<rect class="u u[0-9]+"[^>]*/>')
+REMAINING_BAR_PATTERN = re.compile(r'<rect class="u ')
 SOURCE_VIEWBOX = 'viewBox="-16 -32 880 192"'
 TARGET_VIEWBOX = 'viewBox="-16 -32 880 144"'
 SOURCE_HEIGHT = 'height="192"'
@@ -19,8 +20,8 @@ def optimize(path: Path) -> None:
     svg = path.read_text(encoding="utf-8")
 
     svg, removed_bars = BAR_PATTERN.subn("", svg)
-    if removed_bars != 4:
-        raise ValueError(f"{path}: expected 4 level bars, found {removed_bars}")
+    if REMAINING_BAR_PATTERN.search(svg):
+        raise ValueError(f"{path}: unsupported level-bar markup remains")
 
     if SOURCE_VIEWBOX not in svg or SOURCE_HEIGHT not in svg:
         raise ValueError(f"{path}: unexpected SVG dimensions")
